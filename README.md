@@ -1,73 +1,80 @@
-A simple Jarvis-like AI assistant, built using Python and ElevenLabs Conversational AI. The assistant can greet the user, understand spoken input, respond with AI-generated answers, and speak back using text-to-speech.
+# Nova AI Assistant 🤖
 
-This project focuses on learning how to integrate:
+A simple **Jarvis-like AI Assistant** built using **Python** and **ElevenLabs Conversational AI**.  
+The assistant can greet the user, understand spoken input, generate AI-powered responses, and reply using realistic text-to-speech.
 
-Environment variables for security
+This project was built as a learning exercise to understand **conversational AI**, **voice interfaces**, and **API integration**.
 
-Conversational AI agents
+---
 
-Voice input/output in a terminal environment
+## ✨ Features
 
-Features
+- 🎙️ Voice-based interaction  
+- 🧠 AI-powered conversational responses  
+- 🔊 Text-to-Speech using ElevenLabs  
+- 👤 Personalized greeting using user name  
+- 📅 Context-aware responses using user schedule  
 
-🎙️ Voice-based interaction
+---
 
-🧠 AI-powered conversational responses
+## 🛠️ Tech Stack
 
-🔊 Text-to-Speech using ElevenLabs
+- **Python**
+- **ElevenLabs Conversational AI SDK**
+- **python-dotenv**
 
-👤 Personalized greeting using user name
+---
 
-📅 Context-aware prompt (daily schedule awareness)
+## 📁 Project Structure
 
-Tech Stack
-
-Python
-
-ElevenLabs Conversational AI SDK
-
-dotenv (for environment variables)
-
-Project Structure
-.
 ├── main.py
 ├── .env
 ├── README.md
-Environment Setup
 
-Create a .env file in the project root and add:
+
+
+---
+
+## ⚙️ Environment Setup
+
+Create a `.env` file in the project root and add the following:
 
 API_KEY=your_elevenlabs_api_key
 AGENT_ID=your_agent_id
 
 
-How It Works
+⚠️ **Important:** Do not push the `.env` file to GitHub.
 
-Loads API credentials securely from environment variables
+---
 
-Initializes an ElevenLabs Conversational AI agent
+## ▶️ How to Run
 
-Sets a custom system prompt and first greeting
+Install dependencies:
 
-Starts a voice-based conversation session
-
-Prints both user speech and agent responses in real time
-
-How to Run
+``bash
 pip install python-dotenv elevenlabs
+
+Run the application:
+
 python main.py
 
-Make sure your microphone and audio output are properly configured for voice interaction.
+Ensure your microphone and audio output are properly configured.
 
-Example Use Case
+🧠 How It Works
 
-Ask general questions
+Loads API credentials securely using environment variables
 
-Get responses aware of your daily schedule
+Configures an ElevenLabs conversational AI agent
 
-Experiment with voice-based AI agents
+Sets a custom system prompt and greeting message
 
-Learning Outcomes
+Listens to user speech and converts it to text
+
+Generates AI responses and converts them back to speech
+
+Displays both user input and AI responses in real time
+
+🎯 Learning Outcomes
 
 Working with third-party AI APIs
 
@@ -75,20 +82,22 @@ Secure handling of API keys
 
 Understanding conversational AI workflows
 
-Building a voice-enabled assistant from scratch
+Building a voice-enabled AI assistant
 
-Future Improvements
+🚀 Future Improvements
 
-Add command-based tasks (open apps, web search, reminders)
+Add task-based commands (open apps, reminders, search)
 
 Improve prompt customization
 
-Add text-only fallback mode
+Add text-only interaction mode
 
-Better error handling
+Better error handling and logging
 
-Author
+---
 
-Eliyas
+## 👤 Author
 
-If you found this interesting, feel free to ⭐ the repo and connect with me on LinkedIn!
+Mohammed Eliyas
+
+If you found this project interesting, feel free to ⭐ the repository and connect with me on LinkedIn.
